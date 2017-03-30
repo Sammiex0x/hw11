@@ -1,0 +1,59 @@
+body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font: bold;    
+        color: navy;
+}
+
+.test {
+    color: darkgray;
+}
+
+.test3 {
+    color: navy;
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+
+.red {
+    color:darkred;
+    font-size: 40px;
+}
+
+
+img {
+    size: 200px;
+}
+    
+.header btn {
+        float: left;
+}
+
+.main {
+    color: navy;
+    font: bold;
+    font-size: 20px;
+}
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+
+}
+p {
+    font-size: 20px;
+}
+
+#map {
+        height: 300px;
+        width: 100%;
+       }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="teenwork.css">
+   <script src="teenwork.js"> </script>
+</head>
+
+<body class="test3">
+ 
+  <header>
+    <h1 class="test3"> T  E  E  N  W  O  R  K </h1>
+    <hr> 
+    <img class="img" src="579.gif" alt= "579.gif">
+ </header>
+
+  <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="Teenwork.html">Home</a></li>
+                    <li><a href="who.html">Who We Are</a></li>
+                    <li><a href="employers.html">Employer Spotlight </a></li>
+                    <li> <a href="involved.html"> How We Work </a> </li>
+                    <li><a href="participants.html">See Our Success Stories</a></li>
+                    <li><a href="signin.html">Training Material Login</a></li>
+                </ul>
+            </div>
+  </nav>
+  
+  </head>
+
+<body class="container">
+
+      <main>
+        <div class="test3">
+            <h1> Welcome to Teenwork Training Manuals </h1>
+            <h2 class="test4"> Please Search for Training Manauls by Category </h2>
+            <center> <h3 class="test"> Recent Updates on Category </h3> </center>
+        </div>
+        <form action="/query" method="post">
+                <label for="queryStr">Enter Search for Training Material </label>
+            <input id="queryStr" type="text" name="queryStr" placeholder="enter search">
+            <button id="execute" type="submit">Find</button>
+        </form>
+ 
+        <h2>Results</h2>
+        <h4>
+        <ul>
+           <% listings.forEach(function(item) { %> 
+            <li><%= item.Title %> - <%= item.Description %> - <%= item.Category %> off</li> 
+            <% }); %>
+            </h4>
+        </ul>
+    </main>
+
+   
+</body>
+</html>

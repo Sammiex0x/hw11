@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="teenwork.css">
+   <script src="teenwork.js"> </script>
+</head>
+
+<body class="test3">
+ 
+  <header>
+    <h1 class="test3"> T  E  E  N  W  O  R  K </h1>
+    <hr> 
+    <img class="img" src="images/579.gif" alt= "579.gif">
+ </header>
+
+ <%- include navbar %>
+  
+  </head>
+
+<body class="container">
+
+      <main>
+        <div>
+            <center> <h2> Welcome to Teenwork Training Manuals </h2> </center>
+            <center>   <img src = "images\ryan-165.jpg" alt= "ryan"> </img><center>
+            <h4> Please Search for Training Manauls by Category<h4>
+            </div>
+        <form action="/query" method="post">
+             <label for="queryStr"> </label>
+         <center>  <h3><p> Examples: "Disability" "At Work" " Job Seeking" </p> <input id="queryStr" type="text" name="queryStr" placeholder="Enter Search"> 
+            <button id="execute" type="submit">Find</button> </h3> </center>
+        </form>
+        <center> <h3 class= "red"> Title : Description -  Category</h3> </center>
+      <ul>
+        <h3 class="red"> Results: </h3>
+            <% Transportation.forEach(function(item) { %>
+                <li><p><%= item.Title %> : <%= item.Description %> - <%= item.Category %></p></li>
+            <% }); %>
+        </ul>
+            </main>
+
+
+    
+</body>
+</html>
